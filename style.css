@@ -1,0 +1,131 @@
+body {
+  background-color: #F0F0F0;
+  font-family: 'Inter', sans-serif;
+  color: #293241;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  letter-spacing: 10px;
+  color: #3D5B81;
+  font-family: 'Cairo Play', cursive;
+  margin-bottom: 50px;
+}
+
+h2, h3 {
+  color: #EE6B4D;
+  letter-spacing: 10px;
+  line-height: 32px;
+  margin-left: 10px;
+}
+
+.button {
+  background-color: #293241;
+  color: #F0F0F0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #3D5B81;
+}
+
+.list-inline {
+  padding: 0;
+  list-style: none;
+}
+
+.list-inline li {
+  display: inline-block;
+}
+
+i {
+  color: #293241;
+  font-size: 32px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #58AEDB;
+}
+
+.avatar {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-image: url("images/avatar_quentin.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  animation: changeImage 4s infinite alternate-reverse;
+}
+
+@keyframes changeImage {
+  0% {
+    background-image: url("images/avatar_quentin.jpg");
+  }
+
+  100% {
+    background-image: url("images/avatar_quentin2.jpg");
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width:600px;
+}
+
+.card {
+  background-color: white;
+  padding: 32px ;
+  margin-bottom: 32px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+}
+body {
+	background: linear-gradient(-45deg, #58addb5d, #3d5a814c, #d58e2348, #95621a35);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 350px;
+  }
+}
